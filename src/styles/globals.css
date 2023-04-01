@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+	.m-i-end-0 {
+		margin-inline-end: 0!important;
+	}
+}

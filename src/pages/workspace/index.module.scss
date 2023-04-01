@@ -1,0 +1,14 @@
+.kWorkspace {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    .headerBox {
+      line-height: 56px;
+    }
+    :global {
+      .k-workspace-body {
+        display: flex;
+      }
+    }
+}

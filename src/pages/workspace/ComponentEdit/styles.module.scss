@@ -1,0 +1,89 @@
+.kContentBox {
+  background-image: linear-gradient(#fafafc 14px, transparent 0), linear-gradient(90deg, transparent 14px, #373739 0);
+  background-color: #fafafc;
+  background-size: 15px 15px, 15px 15px;
+  position: relative;
+  width: calc(100vw - 720px);
+  height: calc(100vh - 56px);
+}
+
+.kEditBox {
+  width: 100%;
+  height: calc(100vh - 56px);
+  overflow: auto;
+  padding: 10px 500px 500px 10px;
+  .kEditCanvas {
+    background: #f2f3f5;
+    box-sizing: border-box;
+    position: relative;
+    padding: 20px;
+  }
+}
+
+.kEditDirectionBox {
+  position: absolute;
+  &.selected {
+    z-index: 999;
+    .kSelectBox {
+      background-color: rgba($color: #1677ff, $alpha: 0.3);
+      border: 1px solid #1677ff;
+      cursor: move;
+    }
+    .kPointer {
+      display: block;
+    }
+  }
+  // 背景色
+  .kSelectBox {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  // 内容信息
+  .kPointer {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 10px;
+    height: 10px;
+    box-sizing: border-box;
+    border: 2px solid #1677ff;
+    border-radius: 5px;
+    background-color: #ffffff;
+    &.t {
+      top: -5px;
+      left: calc(50% - 5px);
+    }
+    &.b {
+      bottom: -5px;
+      left: calc(50% - 5px);
+    }
+    &.l {
+      top: calc(50% - 5px);
+      left: -5px;
+    }
+    &.r {
+      top: calc(50% - 5px);
+      right: -5px;
+    }
+    &.lt {
+      top: -5px;
+      left: -5px;
+    }
+    &.rt {
+      top: -5px;
+      right: -5px;
+    }
+    &.lb {
+      bottom: -5px;
+      left: -5px;
+    }
+    &.rb {
+      bottom: -5px;
+      right: -5px;
+    }
+  }
+}

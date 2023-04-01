@@ -1,0 +1,49 @@
+{
+  "name": "kanade-lowcode",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.0.1",
+    "@next/font": "13.1.6",
+    "@scena/react-guides": "^0.22.3",
+    "ahooks": "^3.7.5",
+    "antd": "^5.1.7",
+    "immer": "^9.0.19",
+    "lodash": "^4.17.21",
+    "next": "13.1.6",
+    "object-hash": "^3.0.0",
+    "react": "18.2.0",
+    "react-dnd": "^16.0.1",
+    "react-dnd-html5-backend": "^16.0.1",
+    "react-dom": "18.2.0",
+    "react-input-color": "^4.0.1",
+    "zustand": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.191",
+    "@types/node": "18.11.18",
+    "@types/object-hash": "^3.0.2",
+    "@types/react": "18.0.27",
+    "@types/react-dom": "18.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.50.0",
+    "@typescript-eslint/parser": "^5.54.1",
+    "autoprefixer": "^10.4.13",
+    "eslint": "^8.33.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-next": "13.1.6",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "postcss": "^8.4.21",
+    "prettier": "^2.8.3",
+    "sass": "^1.58.0",
+    "tailwindcss": "^3.2.4",
+    "typescript": "4.9.5"
+  }
+}

@@ -1,0 +1,45 @@
+.kCategoryBox {
+  float: left;
+  width: 80px;
+  height: calc(100vh - 56px);
+  position: relative;
+  z-index: 1;
+  :global {
+    .ant-menu-item {
+      height: auto;
+      margin-bottom: 10px;
+      padding: 8px;
+      text-align: center;
+      .anticon {
+        font-size: 30px;
+      }
+      .ant-menu-title-content {
+        display: block;
+        margin: 0 !important;
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+  }
+}
+
+.kComponentBox {
+  width: 240px;
+  padding: 10px 20px;
+  float: left;
+  height: calc(100vh - 56px);
+  border-right: 1px solid #f0f0f0;
+  .kComponentlist {
+    .kComponentCard {
+      width: 90%;
+      margin: 0 auto 10px;
+      .ant-card-body {
+        padding: 8px;
+        .ant-card-meta-title {
+          font-size: 12px;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}
