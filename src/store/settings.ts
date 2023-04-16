@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 
-interface CommonAttrs {
+export interface CommonAttrs {
   width?: number
   height?: number
   top?: number
@@ -11,7 +11,7 @@ interface CommonAttrs {
   pr?: number
 }
 
-interface ComponentSettings {
+export interface ComponentSettings {
   /**
    * @description 组件id
    */
