@@ -3,7 +3,6 @@ import { Typography, Form, InputNumber, Slider, Upload } from 'antd'
 import { PlusOutlined } from '@ant-design/icons'
 import InputColor from 'react-input-color'
 
-import s from './styles.module.scss'
 import useCanvasPageConfig from './helper'
 import TDKConfig from './TDKConfig'
 
@@ -26,7 +25,7 @@ const CanvasPageConfig: React.FC<CanvasPageConfigProps> = ({ children }) => {
   )
 
   return (
-    <div className={`${s.kCanvasPageBox} shadow-xl bg-gray-100 box-border p-4`}>
+    <>
       <Title level={5} className="text-center bg-white rounded p-1">
         页面配置 <Iconfont type="icon-yemianpeizhi" />
       </Title>
@@ -72,7 +71,7 @@ const CanvasPageConfig: React.FC<CanvasPageConfigProps> = ({ children }) => {
         </Form.Item>
       </Form>
       {children}
-    </div>
+    </>
   )
 }
 
