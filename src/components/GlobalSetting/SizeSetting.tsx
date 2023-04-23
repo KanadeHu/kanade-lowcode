@@ -8,6 +8,7 @@ interface SizeSettingProps {
 }
 
 const SizeSetting: React.FC<SizeSettingProps> = ({ item }) => {
+  console.log(item)
   return (
     <Form name="size-setting" layout="inline">
       <Form.Item label="位置" />
